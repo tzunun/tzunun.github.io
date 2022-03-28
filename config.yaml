@@ -20,6 +20,7 @@ markup:
 
 # Enable global emoji support
 enableEmoji: true
+canonifyurls: true
 
 # Site parameters
 params:
