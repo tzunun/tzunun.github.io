@@ -1,0 +1,50 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Python
+  filter: "Python"
+- name: Machine-Learning
+  filter: "Machine-Learning"
+- name: NLP
+  filter: "NLP"
+- name: Hobby
+  filter: "Hobby"
+
+# your projects
+projects:
+- name: SPDR S&P 500 
+  logo: /images/sections/projects/kubernetes.png
+  role: Owner
+  timeline: "March 2018 - Present"
+  repo: https://github.com/tzunun/sp500_project
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Daily price trend prediction of the SPDR S&P 500.
+  tags: ["Tensorflow", "Python", "Finance"]
+
+- name: Resume NLP project
+  logo: /images/sections/projects/tensorflow.png
+  role: Owner
+  timeline: "Jun 2018 - Present"
+  repo: https://github.com/tzunun/nlp-resume-project
+  #url: ""
+  summary: Use NLP to identify parts of a resume where it can be improved to match a job description.
+  tags: ["NLP", "Machine-Learning","Hobby"]
+
+- name: Plot GNSS Locations.
+  logo: /content/posts/gnss/gnss.png
+  role: Owner
+  timeline: "Jun 2019 - Present"
+  repo: https://github.com/tzunun/gnss-base-stations-project
+  summary: Plot the number of GNSS locations.
+  tags: ["Data","GNSS","Hobby"]

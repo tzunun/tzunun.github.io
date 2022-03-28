@@ -1,0 +1,18 @@
+# some information about you
+name: "Antonio Hernandez"
+nickname: "Antonio"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+# The directory is themes/toha/assets/images
+image: "images/me.jpg"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "antonio@mlmusings.com"
+  phone: "+18324013264"
+
+# some summary about what you do
+summary:
+  - I am a Data Engineer
+  - I am a Firmware Developer
+  - I love AI, ML and IoT
+  - I love to work on projects that have a purpose

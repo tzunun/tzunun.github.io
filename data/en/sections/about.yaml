@@ -1,0 +1,42 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Firmware Developer
+# your company information
+company:
+  name: Freelance
+  url: "https://mlmusings.com"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: 'I am a passionate developer. I create firmware using Python and C++ my favorite tool to write code is [PlatformIO](https://platformio.org/). I am very interested in Embedded AI/ML. Currently I am working on projects using the Julia programing language.  '
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/tzunun"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Leadership
+  percentage: 85
+  color: blue
+- name: Team Work
+  percentage: 90
+  color: yellow
+- name: Effective Communication
+  percentage: 90
+  color: gray

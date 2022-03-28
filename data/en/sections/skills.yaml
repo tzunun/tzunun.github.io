@@ -1,0 +1,37 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Python
+  logo: "/images/sections/skills/python.png"
+  summary: "Capable of writting firmware for IoT devices as well as completing a Machine Learning project."
+  url: "https://python.org/"
+
+- name: C++
+  logo: "/images/sections/skills/c++-logo.png"
+  summary: "I have developed a few solutions using C++, but I am still learning the language."
+  url: "https://isocpp.org/"
+
+- name: Linux
+  logo: "/images/sections/skills/linux.png"
+  summary: "I use Linux as my daily driver; Lately Ubuntu LTS, although I am familiar with RedHat as well.  A lot of the AI/ML software supports Ubuntu LTS."
+  url: "https://linuxfoundation.org/"
+
+- name: Cloud Computing
+  logo: "/images/sections/skills/aws-developer-associate.png"
+  summary: "I am familiar with most of the large cloud providers but I have worked mainly with Azure and AWS.  I have the AWS Deverloper Associate certification."
+  url: "https://aws.amazon.com/"
+
+- name: Machine Learning
+  logo: "/images/sections/skills/aws-ml.png"
+  summary: "I have used most of the ML related software.  I have completed a Data Science bootcamp program, and worked on personal projects related to Machine Learning.  I have the AWS Machine Learning-Specialty certification."
+  url: "https://aws.amazon.com/"

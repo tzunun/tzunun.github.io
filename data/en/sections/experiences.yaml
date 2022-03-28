@@ -1,0 +1,54 @@
+# section information
+section:
+  name: Experience
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Freelance Developer
+    url: "https://mlmusings.com"
+    location: Houston, TX USA
+    # company overview
+    overview: Develop firmware for IoT and embedded devices.
+  positions:
+  - designation: Python/C++ Developer
+    start: Oct 2019
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - In charge of developing software/firmware for mostly IoT devices; custom firmware using Python 3, MicroPython and C/C++ for the Raspberry PI and ESP32 for mostly connected devices, which use BLE, Wi-Fi and LoRa.
+    - Identification of the parts/components of the prototype being worked upon, coordinating modifications with the hardware engineers which are necessary to achieve the functionality specified by the client.
+
+- company:
+    name: Lambda School (Currently Bloomtech)
+    url: "https://bloomtech.com"
+    location: Remote
+    overview: Online programming bootcamp.
+  positions:
+  - designation: Section Lead
+    start: May 2019
+    end: Oct 2019
+    responsibilities:
+    - Spearheaded daily standup meetings to facilitate sharing of ideas and work progress; provided one-on-one feedback and code review on a weekly basis.
+    - Delivered supplemental lectures on various topics related to software engineering and Linux.
+
+- company:
+    name: Vertafore
+    url: "https://www.vertafore.com"
+    location: Remote
+    overview: SaaS Insurance
+  positions:
+  - designation: Linux Application Support Engineer
+    start: Nov 2017
+    end: Apr 2018
+    responsibilities:
+    - Performed basic system administration tasks such as; configuration, making services available to new users as well as creating BASH scripts to backup data to remote servers.
+    - Handled PowerShell to write scripts to partially automate software audit process; tested and deployed software updates and upgrades.
+
