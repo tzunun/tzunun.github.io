@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'https://tzunun.github.io/'
 
 languageCode: en-us
 title: "Antonio Hernandez"
@@ -20,7 +20,6 @@ markup:
 
 # Enable global emoji support
 enableEmoji: true
-canonifyurls: true
 
 # Site parameters
 params:
