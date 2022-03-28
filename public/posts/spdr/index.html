@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SPDR S&amp;P 500 ETF Trust (SPY)</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+<meta property="og:title" content="SPDR S&amp;P 500 ETF Trust (SPY)" />
+<meta property="og:description" content="Introduction to Sample Post" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tzunun.github.io/posts/spdr/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-06-08T08:06:25+06:00" />
+<meta property="article:modified_time" content="2020-06-08T08:06:25+06:00" />
+
+
+
+    
+    
+<meta name="description" content="Introduction to Sample Post" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      Antonio Hernandez</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/vscode/" title="AI/ML Editor">AI/ML Editor</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/anaconda/" title="AI/ML Python Environment">AI/ML Python Environment</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/gnss/" title="GNSS Project">GNSS Project</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/introduction/" title="Introduction">Introduction</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/nlpproject/" title="Resume NLP Project">Resume NLP Project</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/spdr/" title="SPDR S&amp;P 500 ETF Trust (SPY)">SPDR S&amp;P 500 ETF Trust (SPY)</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/vim-mode/" title="Vim Mode in Ipython">Vim Mode in Ipython</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://tzunun.github.io/posts/spdr/stocks.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/me_hu4f99731927d81494ad8abc703c96ecda_93327_120x120_fit_q75_box.jpg' alt="Author Image">
+          <h5 class="author-name">Antonio Hernandez</h5>
+          <p>Monday, June 8, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>SPDR S&amp;P 500 ETF Trust (SPY)</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <p>The initial aim of this project was to make a trend prediction on the daily price of the SPDR S&amp;P 500 ETF from STATE STREET GLOBAL ADVISORS, from this point forwar reffered to as SPDR.  This ETF (exchange traded fund) was chosen because it tracks the Standard &amp; Poor&rsquo;s 500 index.</p>
+<h2 id="results">Results</h2>
+<p>The model was able to provide a rudimentary prediction after 10 epochs, further training resulted in a more accurate prediction graph after 40 epochs.</p>
+<h3 id="graph-after-10-epochs">Graph After 10 Epochs</h3>
+<p><img src="/img/10epochs.png" alt="LSTM Diagram"></p>
+<h3 id="graph-after-40-epochs">Graph After 40 Epochs</h3>
+<p><img src="/img/40epochs.png" alt="LSTM Diagram"></p>
+<h2 id="data">Data</h2>
+<p>What follows is the script I wrote to obtain the data from Quandl.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> quandl
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load the file that would be used to obtain the components of the S&amp;P500 index</span>
+</span></span><span style="display:flex;"><span>sp500 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;sp500.csv&#39;</span>) <span style="color:#75715e"># This assumes the csv file and this file are in the same folder.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Open the file containing the api key</span>
+</span></span><span style="display:flex;"><span>api <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#39;quandl_api_key&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> api<span style="color:#f92672">.</span>mode <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;r&#39;</span>:
+</span></span><span style="display:flex;"><span>api_key <span style="color:#f92672">=</span> api<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Close the api file</span>
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>quandl<span style="color:#f92672">.</span>ApiConfig<span style="color:#f92672">.</span>api_key <span style="color:#f92672">=</span> api_key<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Test the connection to the Quandl API</span>
+</span></span><span style="display:flex;"><span>test <span style="color:#f92672">=</span> quandl<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;WIKI/IBM&#39;</span>)
+</span></span><span style="display:flex;"><span>test<span style="color:#f92672">.</span>head()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>missing_stock <span style="color:#f92672">=</span> [] <span style="color:#75715e"># List to keep track of the unobtainable data.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range (len(sp500) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>): <span style="color:#75715e"># Minus 1 because the last line of the sp500 file refers to the source</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>stock_symbol <span style="color:#f92672">=</span> str(sp500[<span style="color:#e6db74">&#39;Symbol&#39;</span>][x]) <span style="color:#75715e"># Get the stock symbol</span>
+</span></span><span style="display:flex;"><span>stock <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join([<span style="color:#e6db74">&#39;WIKI/&#39;</span>, stock_symbol]) <span style="color:#75715e"># String required for quandl api ex. WIKI/AAPL</span>
+</span></span><span style="display:flex;"><span>file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join([stock_symbol, <span style="color:#e6db74">&#39;.csv&#39;</span>]) <span style="color:#75715e"># Create file name for the csv file</span>
+</span></span><span style="display:flex;"><span>print(x, file_name)
+</span></span><span style="display:flex;"><span>stock_data <span style="color:#f92672">=</span> quandl<span style="color:#f92672">.</span>get(stock) <span style="color:#75715e"># Get the data from Quandl</span>
+</span></span><span style="display:flex;"><span>stock_data<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join([<span style="color:#e6db74">&#39;csv_files/&#39;</span>, file_name])) <span style="color:#75715e"># Save the data to the local csv_files directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>:
+</span></span><span style="display:flex;"><span>missing_stock<span style="color:#f92672">.</span>append(x) <span style="color:#75715e"># Keep track of stock_symbol causing issues with a request to quandl</span>
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39; List the stocks that were not acquired from Quandl. Some data is not free and some sites use a slight variation of the stock symbol.&#39;&#39;&#39;</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;Show stock symbol and name of the data not obtained from Quandl. These represent about 1 percent of all the data
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">At this point I decided to not include them in the data, although I wonder how this will affect the model. &#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> missing_stock:
+</span></span><span style="display:flex;"><span>print(sp500[<span style="color:#e6db74">&#39;Symbol&#39;</span>][x], sp500[<span style="color:#e6db74">&#39;Name&#39;</span>][x])</span></span></code></pre></div>
+<h3 id="organizing-the-data-into-the-dataset-i-needed">Organizing The Data Into The Dataset I Needed</h3>
+<p>After running the code above I was left with a csv_files folder with about 500 csv files. I was not able to obtain all the data I wanted from Quandl, either because some information is not available from them free of charge or because of slight variations in the way ticker symbols were written on the Barchart components&rsquo; list.</p>
+<p>One thing to note is that the S&amp;P500 components change from time to time and for various reasons; for example, companies get added and removed because of acquisitions and corporate spin-offs. My strategy was to work with the S&amp;P500 components that were current the day I obtained the component list from Barchart. I started working on this available data immediately so that, after obtaining some insights into its structure, I could focus on improving its accuracy.</p>
+<h3 id="decisions-on-the-data">Decisions on the data&hellip;</h3>
+<p>For the purpose of this exercise, the following choices were made. Use data
+starting from the first trading day of the year 2000, and up until the last
+day on the data from Quandl. The dates are January 03, 2000 to March 27,
+2018. This range of time gives 4586 days of historical trading data.</p>
+<p>In order to combine all the data from each component into one unit, I used
+a 3D matrix. That is, total number of days multiplied by number of
+components multiplied by the number of features from each of those
+components (High, Low, Open and Close stock price). So 4586x499x4 is the
+matrix size.</p>
+<p>The data for some of the components doesn’t go back all they way to January
+03, 2000. Some only went back a few years, a few more only went back a
+couple of months. So I decided to create my 3D matrix of 4586x499x4 using
+numpy.zeros, which took care of introducing the missing values as well as
+making it easier to insert the data in its appropriate location within the
+3D matrix. Here&rsquo;s how. When I ran the program, it would stop at what seemed
+to be random points and display an error about not being able add data to
+the 3D matrix. The problem was that I was adding the data to the matrix
+starting from the earliest day in the csv file. After many hours I finally
+figured I had to open the files that were causing the issues and look at
+their data as a spreadsheet. There were less than 3500 days of data for some
+of the troublesome files. It occurred to me to do calculations using dates
+to find the appropriate index for inserting the data. After doing some
+reading on how to accomplish this, I took a look at the data again and saw
+that the only thing that all the data had in common was its last reported
+trading day. So I modified the code to start reading and inserting data
+backwards, from the last day until January 03, 2000.</p>
+<p>Up until this moment I had devoted most of my time to looking at the data
+from the components and not the data from the SPY. When I first tried to
+plot a graph using both data sources, S&amp;P 500 components as X and SPY as Y,
+I kept getting an error that they didn’t match. I tried iterations of the
+same code and&hellip;, same error. When I finally printed the length of the S&amp;P
+500 data and SPY, I saw that there was an extra day in the SPY. I checked
+both start and end dates and they matched. I ran the graph cell again and
+got the same error about X and Y being different in size. I uncovered the
+problem by doing a manual binary search on the SPY data and, after a couple
+of minutes discovering that the SPY data which I downloaded manually from
+Yahoo Finance contained data for November 8th, 2017. All the data sets I
+checked from Quandl were missing that day, so I had to remove it from the
+SPY data.</p>
+<p>SPY and APPL obtained from Yahoo Finance. APPL, along with two randomly chosen datasets obtained from Quandl. 2017-11-08 missing on the last three.</p>
+<p><img src="/img/missing_data.jpg" alt="Missing Data"></p>
+<p>Code used to assemble the data&hellip;..
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> numba <span style="color:#f92672">import</span> jit
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os.path <span style="color:#75715e"># To check whether a file exist</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load the s&amp;p500 csv file to read the csv names</span>
+</span></span><span style="display:flex;"><span>sp500_components <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;sp500.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a matrix of 4586 by ~504 by 4, I only need 4 columns per stock, per day, for 4586 days of data or ~18 years.</span>
+</span></span><span style="display:flex;"><span>days <span style="color:#f92672">=</span> <span style="color:#ae81ff">4586</span> 
+</span></span><span style="display:flex;"><span>components <span style="color:#f92672">=</span> len(sp500_components)
+</span></span><span style="display:flex;"><span>columns <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e"># I&#39;m only using the High, Low, Open and Close columns </span>
+</span></span><span style="display:flex;"><span>prepared_data_matrix <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros((days,components,columns))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@jit</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_to_data_matrix</span>(csv_file, index):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>csv_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(csv_file)
+</span></span><span style="display:flex;"><span>date <span style="color:#f92672">=</span> (days <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>data_size <span style="color:#f92672">=</span> (len(csv_data) <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> date <span style="color:#f92672">&lt;=</span> data_size:
+</span></span><span style="display:flex;"><span>counter <span style="color:#f92672">=</span> date <span style="color:#75715e"># 4586 spots counting from the 0th index</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>counter <span style="color:#f92672">=</span> data_size <span style="color:#75715e"># Some number less than 4586</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;counter =&#39;</span>, counter)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> counter <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>prepared_data_matrix[date][index][<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> csv_data[<span style="color:#e6db74">&#39;Open&#39;</span>][counter]
+</span></span><span style="display:flex;"><span>prepared_data_matrix[date][index][<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> csv_data[<span style="color:#e6db74">&#39;High&#39;</span>][counter]
+</span></span><span style="display:flex;"><span>prepared_data_matrix[date][index][<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> csv_data[<span style="color:#e6db74">&#39;Low&#39;</span>][counter]
+</span></span><span style="display:flex;"><span>prepared_data_matrix[date][index][<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=</span> csv_data[<span style="color:#e6db74">&#39;Close&#39;</span>][counter]
+</span></span><span style="display:flex;"><span>date <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>counter <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create each stock&#39;s csv filename </span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> index <span style="color:#f92672">in</span> range (len(sp500_components) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>stock_symbol <span style="color:#f92672">=</span> str(sp500_components[<span style="color:#e6db74">&#39;Symbol&#39;</span>][index]) <span style="color:#75715e"># Get the stock symbol</span>
+</span></span><span style="display:flex;"><span>csv_file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join([stock_symbol, <span style="color:#e6db74">&#39;.csv&#39;</span>]) <span style="color:#75715e"># This is the actual file to read from the local directory </span>
+</span></span><span style="display:flex;"><span>print(csv_file)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Read files found in the local directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isfile(csv_file):
+</span></span><span style="display:flex;"><span>add_to_data_matrix(csv_file, index) <span style="color:#75715e"># Add the contents of the file to the proper location within the prepared_data_matrix(4586x504x4)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;File not found!&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Done creating prepared_data_matrix!&#39;</span>) <span style="color:#75715e"># This process takes a while.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Save the combined components data prepared_data_matrix as a numpy array to be used in the future and avoid reassembling the matrix again.</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#39;data_matrix.npy&#39;</span>, prepared_data_matrix, allow_pickle<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)</span></span></code></pre></div></p>
+<h2 id="running-the-initial-tests">Running The Initial Tests</h2>
+<p>After getting the different parts of the code to work as expected, I split the data into two parts: 70 percent for training and the rest for testing. The result is the following.</p>
+<p><img src="/img/test_graph.png" alt="First Test Graph"></p>
+<p>The model is able to identify that the stock prices do not change by much from one day to the next. At this point this was fine since I just wanted to see that the LSTM was working and I could refactor the code to be more flixible for future uses (speciffically the 3D matrix that was created when I combined the data from all the components).</p>
+<h2 id="the-model">The Model</h2>
+<p>I am not including the code to build the model here.  Rather, I have chosen to provide a picture of the structure of the model, and for this I made use of Tensorboard. The code to build the test model is available at <a href="https://github.com/tzunun/sp500_project/blob/master/build_model.py">https://github.com/tzunun/sp500_project/blob/master/build_model.py</a></p>
+<h3 id="lstm-model-used-for-the-prediction">LSTM Model Used For The Prediction</h3>
+<p><img src="/img/lstm_diagram.png" alt="LSTM Diagram"></p>
+<h3 id="loss-function">Loss Function</h3>
+<p><img src="/img/10epochs_loss_graph.png" alt="LSTM Diagram"></p>
+<h2 id="challenges">Challenges</h2>
+<p>The first day on the project, it turned out that I had overestimated the data I had available, in the event about 20 years of the daily starting, high, low, and ending price the SPDR. Then I realized that if this was a supervised model, I had the prediction part of the training and testing data but not the data needed to make those predictions.</p>
+<p>I first had to get a list of the companies that make up the S&amp;P 500 because it is what the SPDR is based on. The S&amp;P 500 is based on the market capitalization of about 500 large companies whose common stock is listed on the New York Stock Exchange or the NASDAQ stock market. The list I obtained from Barchart, in a nicely formatted csv file, served to make the automation of the data gathering process easier.</p>
+<p>Obtaining the historical data from each of the companies in the S&amp;P500 took longer than I had anticipated. Having decided to use Yahoo Finance to gather this data, and since I had tested downloading historical data from random companies, I erroneously believed that the process could be easily automated.  Not so!  First I had to figure out how the Yahoo Finance website was assembling its requests to fetch the historical data of a particular company. I wrote a script using the list of the S&amp;P 500 components that I obtained from Barchart to automatically create the fetch requests and save the data to its own-name csv file. For example, a request for historical data from Ford Motor Company would be saved to F.csv, F being the abbreviation used to uniquely identify publicly traded shares of Ford Motor Company (also know as &ldquo;ticker symbol&rdquo; or &ldquo;stock symbol&rdquo;).</p>
+<p>The script worked as intended, except that Yahoo&rsquo;s servers stopped responding after 20 or so requests. I tried modifying the time between request along with other tactics, none of which worked. I went looking for a different source of historical and I found Quandl. The Quandl website had numerous examples of how to use their API and the API key they provided me to obtain data.</p>
+<h2 id="final-observations">Final Observations</h2>
+<p>This is an ongoing project, which I plan to revisit an update as I gain more experience with Data Science and Machine Learning. I have no delusions of being able to predict the movement of the stock market, especially when it is affected by factors that I am not able to consider. The purpose of the project was</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ol>
+<li>To build something almost from scratch, with data that I had to find and piece together myself.</li>
+</ol>
+<ul>
+<li>To create a model using Keras and Tensorflow.</li>
+<li>And to create visualizations using Matplotlib and Tensorboard.</li>
+</ul>
+<p>Along the way, I came up with ways to reduce the time it takes to train a model (considering I don&rsquo;t have a GPU). Furthermore, I found myself seeking advise in order to become more proficient in reasoning about a project and writing better code. The complete code for this project is available on my github account at  <a href="https://github.com/tzunun/sp500_project">https://github.com/tzunun/sp500_project</a></p>
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/tzunun/tzunun.github.io/edit/main/content/posts/spdr/index.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/nlpproject/" title="Resume NLP Project" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+        <div class="next-prev-text">Resume NLP Project</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/vim-mode/" title="Vim Mode In Ipython" class="btn btn-outline-info">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Vim Mode In Ipython</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#results">Results</a>
+      <ul>
+        <li><a href="#graph-after-10-epochs">Graph After 10 Epochs</a></li>
+        <li><a href="#graph-after-40-epochs">Graph After 40 Epochs</a></li>
+      </ul>
+    </li>
+    <li><a href="#data">Data</a>
+      <ul>
+        <li><a href="#organizing-the-data-into-the-dataset-i-needed">Organizing The Data Into The Dataset I Needed</a></li>
+        <li><a href="#decisions-on-the-data">Decisions on the data&hellip;</a></li>
+      </ul>
+    </li>
+    <li><a href="#running-the-initial-tests">Running The Initial Tests</a></li>
+    <li><a href="#the-model">The Model</a>
+      <ul>
+        <li><a href="#lstm-model-used-for-the-prediction">LSTM Model Used For The Prediction</a></li>
+        <li><a href="#loss-function">Loss Function</a></li>
+      </ul>
+    </li>
+    <li><a href="#challenges">Challenges</a></li>
+    <li><a href="#final-observations">Final Observations</a></li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tzunun.github.io#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tzunun.github.io#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tzunun.github.io#experiences">Experience</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tzunun.github.io#projects">Projects</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tzunun.github.io#recent-posts">Recent Posts</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:antonio@mlmusings.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>antonio@mlmusings.com</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>&#43;18324013264</span></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://tzunun.github.ioindex.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
